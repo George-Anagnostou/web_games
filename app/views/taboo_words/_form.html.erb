@@ -1,0 +1,47 @@
+<%= form_with(model: taboo_word) do |form| %>
+  <% if taboo_word.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(taboo_word.errors.count, "error") %> prohibited this taboo_word from being saved:</h2>
+
+      <ul>
+        <% taboo_word.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :main_word, style: "display: block" %>
+    <%= form.text_field :main_word %>
+  </div>
+
+  <div>
+    <%= form.label :secondary_word1, style: "display: block" %>
+    <%= form.text_field :secondary_word1 %>
+  </div>
+
+  <div>
+    <%= form.label :secondary_word2, style: "display: block" %>
+    <%= form.text_field :secondary_word2 %>
+  </div>
+
+  <div>
+    <%= form.label :secondary_word3, style: "display: block" %>
+    <%= form.text_field :secondary_word3 %>
+  </div>
+
+  <div>
+    <%= form.label :secondary_word4, style: "display: block" %>
+    <%= form.text_field :secondary_word4 %>
+  </div>
+
+  <div>
+    <%= form.label :secondary_word5, style: "display: block" %>
+    <%= form.text_field :secondary_word5 %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

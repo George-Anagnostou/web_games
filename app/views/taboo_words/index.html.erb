@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Taboo words</h1>
+
+<div id="taboo_words">
+  <% @taboo_words.each do |taboo_word| %>
+    <%= render taboo_word %>
+    <p>
+      <%= link_to "Show this taboo word", taboo_word %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New taboo word", new_taboo_word_path %>

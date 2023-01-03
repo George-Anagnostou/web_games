@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @taboo_word %>
+
+<div>
+  <%= link_to "Edit this taboo word", edit_taboo_word_path(@taboo_word) %> |
+  <%= link_to "Back to taboo words", taboo_words_path %>
+
+  <%= button_to "Destroy this taboo word", @taboo_word, method: :delete %>
+</div>

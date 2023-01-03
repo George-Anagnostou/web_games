@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  main_word: MyString
+  secondary_word1: MyString
+  secondary_word2: MyString
+  secondary_word3: MyString
+  secondary_word4: MyString
+  secondary_word5: MyString
+
+two:
+  main_word: MyString
+  secondary_word1: MyString
+  secondary_word2: MyString
+  secondary_word3: MyString
+  secondary_word4: MyString
+  secondary_word5: MyString
