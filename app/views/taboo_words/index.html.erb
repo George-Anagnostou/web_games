@@ -2,13 +2,24 @@
 
 <h1>Taboo words</h1>
 
+<%= link_to "New taboo word", new_taboo_word_path %>
+
+<style>
+  #taboo_words {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+  }
+</style>
+
 <div id="taboo_words">
   <% @taboo_words.each do |taboo_word| %>
+    <div>
     <%= render taboo_word %>
-    <p>
+    <p style="text-align: center; font-size: .75rem;">
       <%= link_to "Show this taboo word", taboo_word %>
     </p>
+    </div>
   <% end %>
 </div>
-
-<%= link_to "New taboo word", new_taboo_word_path %>

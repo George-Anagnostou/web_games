@@ -1,32 +1,50 @@
-<div id="<%= dom_id taboo_word %>">
-  <p>
-    <strong>Main word:</strong>
-    <%= taboo_word.main_word %>
+<style>
+  .taboo-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 15px;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid red;
+    text-align: center;
+    background-image: linear-gradient(30deg, rgba(123, 222, 245, 1), rgba(242, 114, 196, 1));
+  }
+
+  .taboo-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .main-word {
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+    font-size: 1.5rem;
+  }
+
+  .secondary_word {
+    text-decoration-line: overline;
+    text-decoration-color: red;
+  }
+</style>
+<div id="<%= dom_id taboo_word %>" class="taboo-card">
+
+  <p class="main-word">
+  <%= taboo_word.main_word.titleize %>
   </p>
 
-  <p>
-    <strong>Secondary word1:</strong>
-    <%= taboo_word.secondary_word1 %>
+  <p class="secondary_word">
+  <%= taboo_word.secondary_word1.titleize %>
   </p>
-
-  <p>
-    <strong>Secondary word2:</strong>
-    <%= taboo_word.secondary_word2 %>
+  <p class="secondary_word">
+  <%= taboo_word.secondary_word2.titleize %>
   </p>
-
-  <p>
-    <strong>Secondary word3:</strong>
-    <%= taboo_word.secondary_word3 %>
+  <p class="secondary_word">
+  <%= taboo_word.secondary_word3.titleize %>
   </p>
-
-  <p>
-    <strong>Secondary word4:</strong>
-    <%= taboo_word.secondary_word4 %>
+  <p class="secondary_word">
+  <%= taboo_word.secondary_word4.titleize %>
   </p>
-
-  <p>
-    <strong>Secondary word5:</strong>
-    <%= taboo_word.secondary_word5 %>
+  <p class="secondary_word">
+  <%= taboo_word.secondary_word5.titleize %>
   </p>
 
 </div>
